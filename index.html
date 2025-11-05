@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+æ<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -24,7 +24,7 @@
 
 <script>
 const ipaList = [
-  // format: ["IPA char", "audio URL"]
+  // format: ["IPA char", "audio URL (.mp3)"]
   ["ʔ",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/4d/Glottal_stop.ogg/Glottal_stop.ogg.mp3"],
   ["a",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0e/PR-open_front_unrounded_vowel.ogg/PR-open_front_unrounded_vowel.ogg.mp3"],
   ["e",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/6c/Close-mid_front_unrounded_vowel.ogg/Close-mid_front_unrounded_vowel.ogg.mp3"],
@@ -45,20 +45,21 @@ const ipaList = [
   ["kʷ",  "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/62/Labialized_voiceless_velar_plosive.ogg/Labialized_voiceless_velar_plosive.ogg.mp3"],
   ["w",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f2/Voiced_labio-velar_approximant.ogg/Voiced_labio-velar_approximant.ogg.mp3"],
   ["y",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/ea/Close_front_rounded_vowel.ogg/Close_front_rounded_vowel.ogg.mp3"],
+  ["l",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bc/Alveolar_lateral_approximant.ogg/Alveolar_lateral_approximant.ogg.mp3"],
   ["t",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/02/Voiceless_alveolar_plosive.ogg/Voiceless_alveolar_plosive.ogg.mp3"],
   ["p",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/51/Voiceless_bilabial_plosive.ogg/Voiceless_bilabial_plosive.ogg.mp3"],
   ["s",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/ac/Voiceless_alveolar_sibilant.ogg/Voiceless_alveolar_sibilant.ogg.mp3"],
-  ["g",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/12/Voiced_velar_plosive_02.ogg/Voiced_velar_plosive_02.ogg.mp3"],
-  ["ǰ",   "https://en.wikipedia.org/wiki/File:Voiced_palato-alveolar_affricate.ogg"],
-  ["h",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/da/Voiceless_glottal_fricative.ogg/Voiceless_glottal_fricative.ogg.mp3"],
+  ["š",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cc/Voiceless_palato-alveolar_sibilant.ogg/Voiceless_palato-alveolar_sibilant.ogg.mp3"],
   ["č",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/97/Voiceless_palato-alveolar_affricate.ogg/Voiceless_palato-alveolar_affricate.ogg.mp3"],
-  ["l",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bc/Alveolar_lateral_approximant.ogg/Alveolar_lateral_approximant.ogg.mp3"],
+  ["ǰ",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e6/Voiced_palato-alveolar_affricate.ogg/Voiced_palato-alveolar_affricate.ogg.mp3"],
+  ["g",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/12/Voiced_velar_plosive_02.ogg/Voiced_velar_plosive_02.ogg.mp3"],
+  ["h",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/d/da/Voiceless_glottal_fricative.ogg/Voiceless_glottal_fricative.ogg.mp3"],
   ["x",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/0/0f/Voiceless_velar_fricative.ogg/Voiceless_velar_fricative.ogg.mp3"],
-  ["xʷ",   "https://en.wikipedia.org/wiki/File:Voiceless_labio-velar_fricative.ogg"],
+  ["xʷ",  "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/81/Voiceless_labial-velar_approximant.wav/Voiceless_labial-velar_approximant.wav.mp3"],
   ["χ",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c8/Voiceless_uvular_fricative.ogg/Voiceless_uvular_fricative.ogg.mp3"],
-  ["χʷ",  "https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c8/Voiceless_uvular_fricative.ogg/Voiceless_uvular_fricative.ogg.mp3"],
+  ["χʷ",  "https://upload.wikimedia.org/wikipedia/commons/transcoded/9/9d/Labialized_voiceless_velar_lateral_fricative.ogg/Labialized_voiceless_velar_lateral_fricative.ogg.mp3"],
   ["n",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/29/Alveolar_nasal.ogg/Alveolar_nasal.ogg.mp3"],
-  ["m",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a9/Bilabial_nasal.ogg/Bilabial_nasal.ogg.mp3"]
+  ["m",   "https://upload.wikimedia.org/wikipedia/commons/transcoded/a/a9/Bilabial_nasal.ogg/Bilabial_nasal.ogg.mp3"],
 ];
 
 const board = document.getElementById('board');
@@ -81,4 +82,3 @@ ipaList.forEach(([sym, url]) => {
 
 </body>
 </html>
-
